@@ -14,13 +14,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- Styles -->
-    <link href="{{ asset('frontend/css/materialize.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('frontend/css/materialize.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 
     @yield('styles')
     
-    <link href="{{ asset('frontend/css/styles.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('frontend/css/styles.css') }}" rel="stylesheet">
 </head>
 
     <body>
