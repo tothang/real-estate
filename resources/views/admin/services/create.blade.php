@@ -56,6 +56,15 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <img src="" id="slider-imgsrc" class="img-responsive">
+                            <input type="file" name="image" id="slider-image-input" style="display:none;">
+                            <button type="button" class="btn bg-grey btn-sm waves-effect m-t-15" id="slider-image-btn">
+                                <i class="material-icons">image</i>
+                                <span>UPLOAD IMAGE</span>
+                            </button>
+                        </div>
+
                         <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                             <i class="material-icons">save</i>
                             <span>SAVE</span>

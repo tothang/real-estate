@@ -8,13 +8,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel Real Estate') }}</title>
+    <title>{{ config('app.name', 'Tnt land') }}</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- Styles -->
-    <link href="{{ asset('frontend/css/materialize.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/materialize.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 
@@ -34,7 +34,7 @@
         @endif
 
         {{-- SEARCH BAR --}}
-        @include('frontend.partials.search')
+
         
         {{-- MAIN CONTENT --}}
         <div class="main">

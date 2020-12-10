@@ -604,11 +604,11 @@
 }
 
 .indigo.darken-4 {
-  background-color: #1a237e !important;
+  background-color: #FFFF6B !important;
 }
 
 .indigo-text.text-darken-4 {
-  color: #1a237e !important;
+  color: #FFFF6B !important;
 }
 
 .indigo.accent-1 {
@@ -2129,6 +2129,9 @@
 
 .white-text {
   color: #FFFFFF !important;
+}
+.black-text {
+  color: black !important;
 }
 
 .transparent {

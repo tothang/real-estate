@@ -7,13 +7,19 @@
     <section class="section grey lighten-4 center">
         <div class="container">
             <div class="row">
-                <h4 class="section-heading">Services</h4>
+                <h4 class="section-heading">Dịch vụ</h4>
             </div>
             <div class="row">
                 @foreach($services as $service)
                     <div class="col s12 m4">
                         <div class="card-panel">
-                            <i class="material-icons large indigo-text">{{ $service->icon }}</i>
+                            <div class="card-image">
+                                <span class="card-image-bg"
+                                      style="background-image:url('http://tntland68.com/wp-content/uploads/2017/08/icon1-white.png');
+                                       border-radius: 100%; background-color: #f9bc00; height: 200px;">
+                                </span>
+                            </div>
+{{--                            <i class="material-icons large indigo-text">{{ $service->icon }}</i>--}}
                             <h5>{{ $service->title }}</h5>
                             <p>{{ $service->description }}</p>
                         </div>

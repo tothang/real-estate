@@ -31,6 +31,7 @@ class ServiceController extends Controller
             'description'   => 'required|max:200',
             'icon'          => 'required',
             'service_order' => 'required',
+            'image' => 'required|mimes:jpeg,jpg,png'
         ]);
 
         $service = new Service();

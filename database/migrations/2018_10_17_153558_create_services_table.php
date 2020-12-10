@@ -19,6 +19,7 @@ class CreateServicesTable extends Migration
             $table->text('description');
             $table->string('icon');
             $table->integer('service_order')->default(1);
+            $table->string('image');
             $table->timestamps();
         });
     }

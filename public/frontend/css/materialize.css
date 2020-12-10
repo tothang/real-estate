@@ -588,11 +588,11 @@
 }
 
 .indigo.darken-2 {
-  background-color: #303f9f !important;
+  background-color: #FFFF6B !important;
 }
 
 .indigo-text.text-darken-2 {
-  color: #303f9f !important;
+  color: #FFFF6B !important;
 }
 
 .indigo.darken-3 {
@@ -604,11 +604,11 @@
 }
 
 .indigo.darken-4 {
-  background-color: #1a237e !important;
+  background-color: #FFFF6B !important;
 }
 
 .indigo-text.text-darken-4 {
-  color: #1a237e !important;
+  color: #FFFF6B !important;
 }
 
 .indigo.accent-1 {
@@ -2945,7 +2945,7 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  color: #fff;
+  color: #000000;
   background-color: #ee6e73;
 }
 
@@ -4330,7 +4330,7 @@ nav .sidenav-trigger i {
 
 nav .brand-logo {
   position: absolute;
-  color: #fff;
+  color: #000000;
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
@@ -4399,7 +4399,7 @@ nav ul a {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   font-size: 1rem;
-  color: #fff;
+  color: #000000;
   display: block;
   padding: 0 15px;
   cursor: pointer;
