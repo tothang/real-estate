@@ -24,7 +24,7 @@
                     <h2>EDIT SERVICE</h2>
                 </div>
                 <div class="body">
-                    <form action="{{route('admin.services.update',$service->id)}}" method="POST">
+                    <form action="{{route('admin.services.update',$service->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
 
@@ -57,6 +57,19 @@
                                 </div>
                             </div>
 
+                            @if(Storage::disk('public')->exists('services/'.$service->image))
+                                <div class="form-group">
+                                    <img src="{{Storage::url('services/'.$service->image)}}" id="slider-imgsrc-edit" class="img-responsive img-rounded">
+                                </div>
+                            @endif
+                            <div class="form-group">
+                                <input type="file" name="image" id="slider-image-input-edit" style="display:none;">
+                                <button type="button" class="btn bg-grey btn-sm waves-effect m-t-15" id="slider-image-btn-edit">
+                                    <i class="material-icons">image</i>
+                                    <span>UPLOAD IMAGE</span>
+                                </button>
+                            </div>
+
                         <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                             <i class="material-icons">update</i>
                             <span>Update</span>
@@ -73,4 +86,22 @@
 
 @push('scripts')
 
+    <script>
+        function showImage(fileInput,imgID){
+            if (fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e){
+                    $(imgID).attr('src',e.target.result);
+                    $(imgID).attr('alt',fileInput.files[0].name);
+                }
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        }
+        $('#slider-image-btn-edit').on('click', function(){
+            $('#slider-image-input-edit').click();
+        });
+        $('#slider-image-input-edit').on('change', function(){
+            showImage(this, '#slider-imgsrc-edit');
+        });
+    </script>
 @endpush

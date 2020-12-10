@@ -81,4 +81,22 @@
 
 @push('scripts')
 
+    <script>
+        function showImage(fileInput,imgID){
+            if (fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e){
+                    $(imgID).attr('src',e.target.result);
+                    $(imgID).attr('alt',fileInput.files[0].name);
+                }
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        }
+        $('#slider-image-btn-edit').on('click', function(){
+            $('#slider-image-input-edit').click();
+        });
+        $('#slider-image-input-edit').on('change', function(){
+            showImage(this, '#slider-imgsrc-edit');
+        });
+    </script>
 @endpush
