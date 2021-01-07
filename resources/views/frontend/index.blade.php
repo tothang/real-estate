@@ -15,7 +15,7 @@
                         <div class="card-panel">
                             <div class="card-image">
                                 <span class="card-image-bg"
-                                      style="background-image:url({{Storage::url('services/'.$property->image)}});
+                                      style="background-image:url('http://tntland68.com/wp-content/uploads/2017/08/icon1-white.png');
                                        border-radius: 100%; background-color: #f9bc00; height: 200px;">
                                 </span>
                             </div>
