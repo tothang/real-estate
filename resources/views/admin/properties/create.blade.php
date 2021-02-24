@@ -20,49 +20,49 @@
         <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>CREATE PROPERTY</h2>
+                    <h2>TẠO MỚI CĂN HỘ</h2>
                 </div>
                 <div class="body">
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="text" name="title" class="form-control" value="{{old('title')}}">
-                            <label class="form-label">Property Title</label>
+                            <label class="form-label">Tiêu đề</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="number" class="form-control" name="price" required>
-                            <label class="form-label">Price</label>
+                            <label class="form-label">Giá</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="number" class="form-control" name="bedroom" required>
-                            <label class="form-label">Bedroom</label>
+                            <label class="form-label">Phòng ngủ</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="number" class="form-control" name="bathroom" required>
-                            <label class="form-label">Bathroom</label>
+                            <label class="form-label">Phòng tắm</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="text" class="form-control" name="city" required>
-                            <label class="form-label">City</label>
+                            <label class="form-label">Thành phố</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="text" class="form-control" name="address" required>
-                            <label class="form-label">Address</label>
+                            <label class="form-label">Địa chỉ</label>
                         </div>
                     </div>
 
@@ -81,13 +81,13 @@
 
                     <hr>
                     <div class="form-group">
-                        <label for="tinymce">Description</label>
+                        <label for="tinymce">Mô tả</label>
                         <textarea name="description" id="tinymce">{{old('description')}}</textarea>
                     </div>
 
                     <hr>
                     <div class="form-group">
-                        <label for="tinymce-nearby">Nearby</label>
+                        <label for="tinymce-nearby">Gần tại</label>
                         <textarea name="nearby" id="tinymce-nearby">{{old('nearby')}}</textarea>
                     </div>
 
@@ -95,7 +95,7 @@
             </div>
             <div class="card">
                 <div class="header">
-                    <h2>GALLERY IMAGE</h2>
+                    <h2>THƯ VIỆN ẢNH</h2>
                 </div>
                 <div class="body">
                     <input id="input-id" type="file" name="gallaryimage[]" class="file" data-preview-file-type="text" multiple>
@@ -105,17 +105,17 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>SELECT</h2>
+                    <h2>CHỌN</h2>
                 </div>
                 <div class="body">
 
                     <div class="form-group form-float">
                         <div class="form-line {{$errors->has('purpose') ? 'focused error' : ''}}">
-                            <label>Select Purpose</label>
+                            <label>Chọn mục đích</label>
                             <select name="purpose" class="form-control show-tick">
                                 <option value="">-- Please select --</option>
-                                <option value="sale">Sale</option>
-                                <option value="rent">Rent</option>
+                                <option value="sale">Bán</option>
+                                <option value="rent">Cho thuê</option>
                             </select>
                         </div>
                     </div>
@@ -125,8 +125,8 @@
                             <label>Select type</label>
                             <select name="type" class="form-control show-tick">
                                 <option value="">-- Please select --</option>
-                                <option value="house">House</option>
-                                <option value="apartment">Apartment</option>
+                                <option value="house">Nhà</option>
+                                <option value="apartment">Căn hộ</option>
                             </select>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
 
                     <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                         <i class="material-icons">save</i>
-                        <span>SAVE</span>
+                        <span>LƯU</span>
                     </button>
                 </div>
             </div>

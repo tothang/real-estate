@@ -21,7 +21,7 @@
                         SLIDER LIST
                         <a href="{{route('admin.sliders.create')}}" class="btn waves-effect waves-light right headerightbtn">
                             <i class="material-icons left">add</i>
-                            <span>CREATE </span>
+                            <span>TẠO MỚI </span>
                         </a>
                     </h2>
                 </div>
@@ -31,10 +31,10 @@
                             <thead>
                                 <tr>
                                     <th>SL.</th>
-                                    <th>Image</th>
-                                    <th>Title</th>
-                                    <th>Description</th>
-                                    <th width="100px">Action</th>
+                                    <th>Ảnh</th>
+                                    <th>Tiêu đề</th>
+                                    <th>Mô tả</th>
+                                    <th width="100px">Hành động</th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -21,7 +21,7 @@
                 <li class="{{ Request::is('admin/properties*') ? 'active' : '' }}">
                     <a href="{{ route('admin.properties.index') }}">
                         <i class="material-icons">home</i>
-                        <span>Property</span>
+                        <span>Căn hộ</span>
                     </a>
                 </li>
                 <li class="{{ Request::is('admin/features*') ? 'active' : '' }}">
@@ -34,14 +34,14 @@
                 <li class="{{ Request::is('admin/services*') ? 'active' : '' }}">
                     <a href="{{ route('admin.services.index') }}">
                         <i class="material-icons">wb_sunny</i>
-                        <span>Services</span>
+                        <span>Dịch vụ</span>
                     </a>
                 </li>
 
                 <li class="{{ Request::is('admin/testimonials*') ? 'active' : '' }}">
                     <a href="{{ route('admin.testimonials.index') }}">
                         <i class="material-icons">view_carousel</i>
-                        <span>Testimonials</span>
+                        <span>Khách hàng nhận xét</span>
                     </a>
                 </li>
 
@@ -61,7 +61,7 @@
                 <li class="{{ Request::is('admin/posts*') ? 'active' : '' }}">
                     <a href="{{ route('admin.posts.index') }}">
                         <i class="material-icons">library_books</i>
-                        <span>Posts</span>
+                        <span> Bài đăng</span>
                     </a>
                 </li>
 
@@ -69,7 +69,7 @@
                 <li class="{{ Request::is('admin/galleries*') ? 'active' : '' }}">
                     <a href="{{ route('admin.album') }}">
                         <i class="material-icons">view_list</i>
-                        <span>Gallery</span>
+                        <span>Thư viện</span>
                     </a>
                 </li>
  

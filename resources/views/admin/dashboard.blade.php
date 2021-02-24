@@ -21,7 +21,7 @@
                     <i class="material-icons">playlist_add_check</i>
                 </div>
                 <div class="content">
-                    <div class="text">TOTAL PROPERTY</div>
+                    <div class="text">TỔNG SỐ CĂN HỘ</div>
                     <div class="number count-to" data-from="0" data-to="{{ $propertycount }}" data-speed="15" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                     <i class="material-icons">help</i>
                 </div>
                 <div class="content">
-                    <div class="text">TOTAL POST</div>
+                    <div class="text">TỔNG SỐ BÀI ĐĂNG</div>
                     <div class="number count-to" data-from="0" data-to="{{ $postcount }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <i class="material-icons">forum</i>
                 </div>
                 <div class="content">
-                    <div class="text">TOTAL COMMENT</div>
+                    <div class="text">TỔNG SỐ BÌNH LUẬN </div>
                     <div class="number count-to" data-from="0" data-to="{{ $commentcount }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     <i class="material-icons">person_add</i>
                 </div>
                 <div class="content">
-                    <div class="text">TOTAL USER</div>
+                    <div class="text">TỔNG SỐ NGƯỜI DÙNG</div>
                     <div class="number count-to" data-from="0" data-to="{{ $usercount }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card">
                 <div class="header">
-                    <h2>RECENT PROPERTIES</h2>
+                    <h2>CĂN HỘ MỚI ĐĂNG GẦN ĐÂY</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
@@ -76,10 +76,10 @@
                                 <tr>
                                     <th>SL.</th>
                                     <th>Title</th>
-                                    <th>Price</th>
-                                    <th>City</th>
+                                    <th>Giá</th>
+                                    <th>Thành phố</th>
                                     <th><i class="material-icons small">star</i></th>
-                                    <th>Manager</th>
+                                    <th>Quản lý</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -113,7 +113,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card">
                 <div class="header">
-                    <h2>RECENT POSTS</h2>
+                    <h2>BÀI ĐĂNG GẦN ĐÂY</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
@@ -121,9 +121,9 @@
                             <thead>
                                 <tr>
                                     <th>SL.</th>
-                                    <th>Title</th>
-                                    <th><i class="material-icons small">comment</i></th>
-                                    <th>Author</th>
+                                    <th>Tiêu đề</th>
+                                    <th><i class="material-icons small">bình luận</i></th>
+                                    <th>Tác giả</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -155,7 +155,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card">
                 <div class="header">
-                    <h2>USER LIST</h2>
+                    <h2>DANH SÁCH NGƯỜI DÙNG</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
@@ -163,7 +163,7 @@
                             <thead>
                                 <tr>
                                     <th>SL.</th>
-                                    <th>Name</th>
+                                    <th>Tên</th>
                                     <th>Email</th>
                                     <th>Role</th>
                                 </tr>
@@ -189,7 +189,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card">
                 <div class="header">
-                    <h2>RECENT COMMENTS</h2>
+                    <h2>BÌNH LUẬN GẦN ĐÂY</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
@@ -197,10 +197,10 @@
                             <thead>
                                 <tr>
                                     <th>SL.</th>
-                                    <th>Comment</th>
+                                    <th>Bình luận</th>
                                     <th><i class="material-icons small">check</i></th>
-                                    <th>Author</th>
-                                    <th>Time</th>
+                                    <th>Tác giả</th>
+                                    <th>Thời gian</th>
                                 </tr>
                             </thead>
                             <tbody>

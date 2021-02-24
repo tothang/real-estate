@@ -14,7 +14,7 @@
     <div class="block-header">
         <a href="{{route('admin.features.create')}}" class="waves-effect waves-light btn right m-b-15 addbtn">
             <i class="material-icons left">add</i>
-            <span>CREATE </span>
+            <span>TẠO MỚI </span>
         </a>
     </div>
 
@@ -22,7 +22,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>FEATURE LIST</h2>
+                    <h2>DANH SÁCH CĂN HỘ</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
@@ -30,17 +30,17 @@
                             <thead>
                                 <tr>
                                     <th>SL.</th>
-                                    <th>Name</th>
+                                    <th>Tên</th>
                                     <th>Slug</th>
-                                    <th>Action</th>
+                                    <th>Hành động</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>SL.</th>
-                                    <th>Name</th>
+                                    <th>Tên</th>
                                     <th>Slug</th>
-                                    <th>Action</th>
+                                    <th>Hành động</th>
                                 </tr>
                             </tfoot>
                             <tbody>

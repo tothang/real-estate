@@ -14,7 +14,7 @@
     <div class="block-header">
         <a href="{{route('admin.properties.create')}}" class="waves-effect waves-light btn right m-b-15 addbtn">
             <i class="material-icons left">add</i>
-            <span>CREATE </span>
+            <span>TẠO MỚI </span>
         </a>
     </div>
 
@@ -22,7 +22,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>PROPERTY LIST</h2>
+                    <h2>DANH SÁCH CĂN HỘ</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
@@ -30,16 +30,16 @@
                             <thead>
                                 <tr>
                                     <th>SL.</th>
-                                    <th>Image</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
-                                    <th>Type</th>
-                                    <th>Purpose</th>
-                                    <th>Beds</th>
-                                    <th>Baths</th>
+                                    <th>Ảnh</th>
+                                    <th>Tiêu đề</th>
+                                    <th>Tác giả</th>
+                                    <th>Loại</th>
+                                    <th>Mục đích</th>
+                                    <th>Phòng ngủ</th>
+                                    <th>Phòng tắm</th>
                                     <th><i class="material-icons small">comment</i></th>
                                     <th><i class="material-icons small">stars</i></th>
-                                    <th width="150">Action</th>
+                                    <th width="150">Hành động</th>
                                 </tr>
                             </thead>
 
