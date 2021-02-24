@@ -9,7 +9,7 @@
     <section class="section">
         <div class="container">
             <div class="row">
-                <h4 class="section-heading">Blog Posts</h4>
+                <h4 class="section-heading">Các bài đăng</h4>
             </div>
             <div class="row">
 

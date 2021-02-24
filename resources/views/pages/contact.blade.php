@@ -12,7 +12,7 @@
 
                 <div class="col s12 m8">
                     <div class="contact-content">
-                        <h4 class="contact-title">Contact Us</h4>
+                        <h4 class="contact-title">Liên hệ với chúng tôi</h4>
 
                         <form id="contact-us" action="" method="POST">
                             @csrf
@@ -26,14 +26,14 @@
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">person</i>
                                     <input id="name" name="name" type="text" class="validate" value="{{ auth()->user()->name }}" readonly>
-                                    <label for="name">Name</label>
+                                    <label for="name">Tên</label>
                                 </div>
                             @endauth
                             @guest
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">person</i>
                                     <input id="name" name="name" type="text" class="validate">
-                                    <label for="name">Name</label>
+                                    <label for="name">Tên</label>
                                 </div>
                             @endguest
 
@@ -55,17 +55,17 @@
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">phone</i>
                                 <input id="phone" name="phone" type="number" class="validate">
-                                <label for="phone">Phone</label>
+                                <label for="phone">Điện thoại</label>
                             </div>
 
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">mode_edit</i>
                                 <textarea id="message" name="message" class="materialize-textarea"></textarea>
-                                <label for="message">Message</label>
+                                <label for="message">Tin nhắn</label>
                             </div>
                             
                             <button id="msgsubmitbtn" class="btn waves-effect waves-light indigo darken-4 btn-large" type="submit">
-                                <span>SEND</span>
+                                <span>Gửi</span>
                                 <i class="material-icons right">send</i>
                             </button>
 
@@ -78,7 +78,7 @@
                     <div class="contact-sidebar">
                         <div class="m-t-30">
                             <i class="material-icons left">call</i>
-                            <h6 class="uppercase">Call us Now</h6>
+                            <h6 class="uppercase">Gọi ngay</h6>
                             @if(isset($contactsettings[0]) && $contactsettings[0]['phone'])
                                 <h6 class="bold m-l-40">{{ $contactsettings[0]['phone'] }}</h6>
                             @endif
@@ -92,7 +92,7 @@
                         </div>
                         <div class="m-t-30">
                             <i class="material-icons left">map</i>
-                            <h6 class="uppercase">Address</h6>
+                            <h6 class="uppercase">Địa chỉ</h6>
                             @if(isset($contactsettings[0]) && $contactsettings[0]['address'])
                                 <h6 class="bold m-l-40">{!! $contactsettings[0]['address'] !!}</h6>
                             @endif

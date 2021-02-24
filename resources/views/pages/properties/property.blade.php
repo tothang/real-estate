@@ -10,7 +10,7 @@
         <div class="container">
             
             <div class="row">
-                <h4 class="section-heading">Properties</h4>
+                <h4 class="section-heading">Căn hộ</h4>
             </div>
 
             <div class="row">
@@ -73,15 +73,15 @@
                             <div class="card-action property-action">
                                 <span class="btn-flat">
                                     <i class="material-icons">check_box</i>
-                                    Bedroom: <strong>{{ $property->bedroom}}</strong> 
+                                    Phòng ngủ: <strong>{{ $property->bedroom}}</strong>
                                 </span>
                                 <span class="btn-flat">
                                     <i class="material-icons">check_box</i>
-                                    Bathroom: <strong>{{ $property->bathroom}}</strong> 
+                                    Phòng tắm: <strong>{{ $property->bathroom}}</strong>
                                 </span>
                                 <span class="btn-flat">
                                     <i class="material-icons">check_box</i>
-                                    Area: <strong>{{ $property->area}}</strong> Square Feet
+                                    Khu vực: <strong>{{ $property->area}}</strong> Square Feet
                                 </span>
                                 <span class="btn-flat">
                                     <i class="material-icons">comment</i> 

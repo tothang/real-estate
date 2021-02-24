@@ -2,15 +2,15 @@
     <div class="container">
         <div class="row">
             <div class="col m4 s12">
-                <h5 class="black-text uppercase">About Us</h5>
+                <h5 class="black-text uppercase">Về chúng tôi</h5>
                 @if(isset($footersettings[0]) && $footersettings[0]['aboutus'])
                     <p class="black-text text-lighten-4">{{ $footersettings[0]['aboutus'] }}</p>
                 @else
-                    <p class="black-text text-lighten-4">Real estate company description goes here.</p>
+                    <p class="black-text text-lighten-4">Mua bán bất động sản Quảng Ninh</p>
                 @endif
             </div>
             <div class="col m6 s12">
-                <h5 class="black-text uppercase">Recent Properties</h5>
+                <h5 class="black-text uppercase">Các căn hộ mới</h5>
                 <ul class="collection border0">
 
                     @foreach($footerproperties as $property)
@@ -20,7 +20,7 @@
                             <h5 class="font-18 m-b-0 m-t-5">
                                 <a href="{{ route('property.show',$property->slug) }}" class="black-text">{{ str_limit($property->title,40) }}</a>
                             </h5>
-                            <p class="m-t-0 m-b-5 black-text text-lighten-1">Bedroom: {{ $property->bedroom }} Bathroom: {{ $property->bathroom }} </p>
+                            <p class="m-t-0 m-b-5 black-text text-lighten-1">Phòng ngủ: {{ $property->bedroom }} Phòng tắm: {{ $property->bathroom }} </p>
                         </div>
                     </li>
                     @endforeach
@@ -31,15 +31,15 @@
                 <h5 class="black-text uppercase">Menu</h5>
                 <ul>
                     <li class="uppercase {{ Request::is('property*') ? 'underline' : '' }}">
-                        <a href="{{ route('property') }}" class="black-text text-lighten-3">Properties</a>
+                        <a href="{{ route('property') }}" class="black-text text-lighten-3">Các căn hộ</a>
                     </li>
 
                     <li class="uppercase {{ Request::is('agents*') ? 'underline' : '' }}">
-                        <a href="{{ route('agents') }}" class="black-text text-lighten-3">Agents</a>
+                        <a href="{{ route('agents') }}" class="black-text text-lighten-3">Đại lý</a>
                     </li>
 
                     <li class="uppercase {{ Request::is('gallery*') ? 'underline' : '' }}">
-                        <a href="{{ route('gallery') }}" class="black-text text-lighten-3">Gallery</a>
+                        <a href="{{ route('gallery') }}" class="black-text text-lighten-3">Thư viện</a>
                     </li>
 
                     <li class="uppercase {{ Request::is('blog*') ? 'underline' : '' }}">
@@ -47,7 +47,7 @@
                     </li>
 
                     <li class="uppercase {{ Request::is('contact') ? 'underline' : '' }}">
-                        <a href="{{ route('contact') }}" class="black-text text-lighten-3">Contact</a>
+                        <a href="{{ route('contact') }}" class="black-text text-lighten-3">Liên hệ</a>
                     </li>
                 </ul>
             </div>

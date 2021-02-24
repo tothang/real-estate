@@ -7,7 +7,7 @@
                     @if(isset($navbarsettings[0]) && $navbarsettings[0]['name'])
                         {{ $navbarsettings[0]['name'] }}
                     @else
-                        Real State
+                        BĐS Quảng Ninh
                     @endif
                     <i class="material-icons left">location_city</i>
                 </a>
@@ -17,19 +17,19 @@
                 
                 <ul class="right hide-on-med-and-down">
                     <li class="{{ Request::is('/') ? 'active' : '' }}">
-                        <a href="{{ route('home') }}">Home</a>
+                        <a href="{{ route('home') }}">Trang Chủ</a>
                     </li>
 
                     <li class="{{ Request::is('property*') ? 'active' : '' }}">
-                        <a href="{{ route('property') }}">Properties</a>
+                        <a href="{{ route('property') }}">Căn hộ</a>
                     </li>
 
                     <li class="{{ Request::is('agents*') ? 'active' : '' }}">
-                        <a href="{{ route('agents') }}">Agents</a>
+                        <a href="{{ route('agents') }}">Đại lý</a>
                     </li>
 
                     <li class="{{ Request::is('gallery') ? 'active' : '' }}">
-                        <a href="{{ route('gallery') }}">Gallery</a>
+                        <a href="{{ route('gallery') }}">Thư viện</a>
                     </li>
 
                     <li class="{{ Request::is('blog*') ? 'active' : '' }}">
@@ -37,7 +37,7 @@
                     </li>
 
                     <li class="{{ Request::is('contact') ? 'active' : '' }}">
-                        <a href="{{ route('contact') }}">Contact</a>
+                        <a href="{{ route('contact') }}">Liên hệ</a>
                     </li>
 
                     @guest
@@ -88,7 +88,7 @@
     
     <ul class="sidenav" id="mobile-demo">
         <li class="{{ Request::is('/') ? 'active' : '' }}">
-            <a href="{{ route('home') }}">Home</a>
+            <a href="{{ route('home') }}">Trang chủ</a>
         </li>
 
         <li class="{{ Request::is('property*') ? 'active' : '' }}">

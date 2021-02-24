@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-content">
-        <h3 class="font-18 m-t-0 bold uppercase">Popular Posts</h3>
+        <h3 class="font-18 m-t-0 bold uppercase">Bài đăng phổ biến</h3>
         <ul class="collection">
             @foreach($popularposts as $post)
                 <li class="collection-item">
@@ -15,7 +15,7 @@
     
 <div class="card">
     <div class="card-content">
-        <h3 class="font-18 m-t-0 bold uppercase">Categories</h3>
+        <h3 class="font-18 m-t-0 bold uppercase">Danh mục</h3>
         <ul>
             @foreach($categories as $category)
                 <li class="category-bg-image" style="background-image:url({{Storage::url('category/slider/'.$category->image)}});">
